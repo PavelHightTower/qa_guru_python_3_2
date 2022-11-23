@@ -1,9 +1,8 @@
 from selene.support.shared import browser
 from selene import be, have
-import pytest
 
 
-class TestGoogleSearch():
+class TestGoogleSearch:
     def test_selene_search(self, open_browser):
         browser.element('[name="q"]').should(be.blank).type(
             'selene python').press_enter()  # уточнил поиск, а то не выдавал из-за локации

@@ -7,7 +7,7 @@ def open_browser():
     browser.config.window_height = 950
     browser.config._window_width = 1600
     browser.open('https://google.com/ncr')
-    browser.element("[id='L2AGLb']").click()  # подтвердил использование куки
+    browser.element("[id='L2AGLb']").click()  # убрал окно куки
 
     yield
 
